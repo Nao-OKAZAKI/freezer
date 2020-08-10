@@ -1,5 +1,10 @@
-hd_00{
+h1{
     font-size: 24px;
     font-family: 'Meiryo UI';
-    color: #880000;
-}  
+    color: #151515;
+}
+.make_cards{
+    background: linear-gradient(0deg,#EAEEFF,#1AAFEA);
+    width: 320px;
+}
+
