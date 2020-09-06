@@ -3,8 +3,11 @@ h1{
     font-family: 'Meiryo UI';
     color: #151515;
 }
-.make_cards{
+div.make_cards{
     background: linear-gradient(0deg,#EAEEFF,#1AAFEA);
     width: 320px;
 }
-
+canvas#id_card{
+    width: 320px;
+    height: 200px;
+}

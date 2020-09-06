@@ -16,64 +16,20 @@
     
     <form action="" name="input_food" id="id_input_food">
       <input type="text" id="id_food" name="food" value=""/>
-      <input type="button" id="id_make" value="Make" onclick="make_cards();">
+      <input type="button" id="id_make" value="Make" onclick="test()">
     </form>
-     
-  </div>
-  <! ------------------------------------->
-  <div class="square">
-  <span id="id_span"></span>
-  <canvas id="id_cards">
-    <script>
-
-      var food_name = {'ほうれんそう','こまつな','ブロッコリー'};
-      var image_name = {'spinach.png','komatsuna.png','broccoli.png'};
-
-      function search_file(food){
-	  var index = -1;
-	 
-	  for(var cn=0;cn<3;cn++){
-	      if(food_name[cn] != food) continue;
-	      index = cn;
-	  }
-
-	  if(index < 0){return = 'xxxx';}
-	  else{return image_name[index];}
-      };
-      
-      var canvas = document.getElementById('id_cards');
-      var image = new Image();
-      
-      function make_cards(){
-	       	  
-	  //var canvas = document.getElementById('id_cards');
-	  var text = canvas.getContext('2d');
-	  	  
-	  target = document.getElementById("id_food").value
-	  
-	  text.fillStyle='#0A0A0A';
-	  image.src =search_file(target);
-	  alert(search_file(target))
-	  text.font = "20px Meiryo UI";
-	  text.fillText(search_file(target), 50, 60);
-	  //text.drawImage(image,50,60,96,56);
-	 
-      };
-
-      function say_hello(){
-	  document.write("hello");
-      };
-     
-     
-      
-      //canvas.addEventListener("dragstart", say_hello, false);
-     
-   </script>
-
-  
-  </canvas>
     
   </div>
+   
+  <script type="text/javascript" src="./functions.js"></script>
+  <! ------------------------------------->
+  <div class="square">
+    <canvas id="id_card">
+  
+    </canvas>
+    <script type="text/javascript" src="./functions.js"></script>
+  </div>
+
   <!--------------- Script --------------->
  
   <! ------------------------------------->
